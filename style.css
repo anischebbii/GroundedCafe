@@ -4,52 +4,58 @@ body {
   margin: 0;
   font-family: "roboto", sans-serif;
 }
-  .containers {
-    height: 100%;
-  }
- .bg {
+
+.containers {
+  height: 100%;
+}
+
+.bg {
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-    
- }
+}
 
- /* Adding image to each div */
- .image1 {
-    background-image:url("pexels-nao-triponez-129207-home1.jpg");
-  }
-  .image2 {
-    background-image: url("pexels-nao-triponez-129207.jpg");
-  }
-  .image3 {
-    background-image: url("pexels-nao-triponez-new.jpg");
-  }
-  .image4 {
-    background-image:url("pexels-nao-triponez-129207-home.jpg");
-  }
-  
-  
-  .text {
-     font-size: 30px;
-     width: 100%;
-     text-align: center;
-  }
-  
-  .contact-background {
-    background-image: url("pexels-monstera-7114087.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+/* Adding image to each div */
+.image1 {
+  background-image: url("pexels-nao-triponez-129207-home1.jpg");
+}
+
+.image2 {
+  background-image: url("pexels-nao-triponez-129207.jpg");
+}
+
+.image3 {
+  background-image: url("pexels-nao-triponez-new.jpg");
+}
+
+.image4 {
+  background-image: url("pexels-nao-triponez-129207-home.jpg");
+}
+.image5 {
+  background-image: url("pexels-farmers.jpg");
+}
+
+.text {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-background {
+  background-image: url("pexels-monstera-7114087.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .transparent-white input,
 .transparent-white textarea,
 .transparent-white select {
-    background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .form-group {
@@ -67,7 +73,6 @@ h2 {
     background-attachment: fixed;
   }
 }
-
 
 .content {
   padding: 40px;
@@ -92,41 +97,21 @@ footer {
 .footer-title {
   font-size: 28px;
   margin-bottom: 15px;
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
-}
-
-.footer-links {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-links li {
-  margin: 0 10px;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-socials {
+  }
+  
+  .footer-socials {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
-}
-
-.social-icon {
+  }
+  
+  .social-icon {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -135,48 +120,137 @@ footer {
   line-height: 30px;
   color: #4b3827;
   border-radius: 50%;
-
-}
-img {
+  }
+  
+  img {
   display: inline-block;
   width: 30px;
   height: 30px;
   margin: 0 5px;
   line-height: 30px;
   border-radius: 50%;
-}
-
-.social-icon:hover {
+  }
+  
+  .social-icon:hover {
   padding: -5px;
   background-color: #9d7d5a;
-}
-
-.footer-copyright {
+  }
+  
+  .footer-copyright {
   font-size: 14px;
   text-align: center;
-}
-
-iframe{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60);
-    -moz-opacity: 0.6;
-    -khtml-opacity: 0.6;
-    opacity: 0.6;
-}
-
-iframe:hover{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    opacity: 1;
-}
-
-.Hero {
+  }
+  
+  iframe {
+  opacity: 0.6;
+  }
+  
+  iframe:hover {
+  opacity: 1;
+  }
+  
+  .grounded-text {
+  font-size: 9rem; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .we-are {
+    margin-bottom: -70px;
+  font-size: 5rem; 
+  font-family: Roboto;
+  }
+  
+  .Hero {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: calc(50% - 600px);
+  width: 30%;
   transform: translateY(-50%);
-  font-size: 48px;
+  font-size: xx-large;
   color: white;
+  }
+  
+  .italic {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  }
+  
+  .times, .phonetic {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  }
+  
+  @media (max-width: 767px) {
+  .bg {
+  background-attachment: scroll;
+  }
+  
+  .Hero {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  transform: translateY(-50%);
+  font-size: 72;
+  color: white;
+  }
+  
+  .grounded-text {
+  font-size: 5rem; 
+  }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) { 
+  .Hero {
+  position: absolute;
+  top: 50%;
+  left: 5%;  
+  width: 90%; 
+  transform: translateY(-50%);
+  font-size: x-large; 
+  color: white;
+  }
+  
+  .grounded-text {
+  font-size:  5rem; 
+  }
+  .containers {
+    height: 100%;
+  }
+  
+  .bg {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Adding image to each div */
+  .image1 {
+    background-image: url("pexels-nao-triponez-129207-home1.jpg");
+  }
+  
+  .image2 {
+    background-image: url("pexels-nao-triponez-129207.jpg");
+  }
+  
+  .image3 {
+    background-image: url("pexels-nao-triponez-new.jpg");
+  }
+  
+  .image4 {
+    background-image: url("pexels-nao-triponez-129207-home.jpg");
+  }
+  .image5 {
+    background-image: url("pexels-farmers.jpg");
+  }
+  
+  .text {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
 }
+  
