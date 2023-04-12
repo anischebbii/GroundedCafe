@@ -15,40 +15,85 @@
 
 <body class="menu-background">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-		<div class="container">
-		    <a class="navbar-brand" href="index.html">Grounded</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-			<span class="navbar-toggler-icon"></span>
-		    </button>
-  
-		    <div class="collapse navbar-collapse" id="navbarNav">
-			    <div class="mx-auto"></div>
-                <ul class="navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Coffee Shop Badge Logo.png" alt="Logo" class="logo-placeholder me-2">
+                Grounded
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
 	</nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setActiveMenuItem();
+      
+          function setActiveMenuItem() {
+            const currentUrl = window.location.href;
+            const navLinks = document.querySelectorAll(".nav-link");
+      
+            navLinks.forEach((navLink) => {
+              if (navLink.href === currentUrl) {
+                navLink.classList.add("active");
+              } else {
+                navLink.classList.remove("active");
+              }
+            });
+          }
+        });
+      </script>
     
+    <div class="containers">
+        <div class="bg image7">
+            <div class="container-fluid">
+                <div class="row vh-100">
+                    <div class="col-12 d-flex align-items-center justify-content-start">
+                        <div class="text-container p-5">
+                            <div class="Hero">
+                                <div class="we-are"></div> 
+                                    <span class="grounded-text">Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="footer-container">
+                    <h3 class="footer-title">Grounded Coffee</h3>
+                    <p class="footer-text">The finest coffee in town, grounded for your satisfaction.</p>
+                    <div class="footer-socials">
+                        <a href="fb.png" class="social-icon"><img src="fb.png" alt="Facebook"></a>
+                        <a href="twtr.png" class="social-icon"><img src="twtr.png" alt="Twitter"></a>
+                        <a href="ig.png" class="social-icon"><img src="ig.png" alt="Instagram"></a>
+                    </div>
+                    <p class="footer-copyright">© 2023 Grounded Coffee. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
       var nav = document.querySelector('nav');

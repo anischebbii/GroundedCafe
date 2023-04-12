@@ -16,91 +16,115 @@
 
 <body class="contact-background">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-		<div class="container">
-		    <a class="navbar-brand" href="index.html">Grounded</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-			<span class="navbar-toggler-icon"></span>
-		    </button>
-  
-		    <div class="collapse navbar-collapse" id="navbarNav">
-			    <div class="mx-auto"></div>
-                <ul class="navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Coffee Shop Badge Logo.png" alt="Logo" class="logo-placeholder me-2">
+                Grounded
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
 	</nav>
-    <div class="container h-100">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setActiveMenuItem();
+      
+          function setActiveMenuItem() {
+            const currentUrl = window.location.href;
+            const navLinks = document.querySelectorAll(".nav-link");
+      
+            navLinks.forEach((navLink) => {
+              if (navLink.href === currentUrl) {
+                navLink.classList.add("active");
+              } else {
+                navLink.classList.remove("active");
+              }
+            });
+          }
+        });
+      </script>
+    <div class="container-fluid h-100">
         <div class="row align-items-center h-100">
             <div class="col-12 col-md-6">
-                <!-- Left half of the screen (empty) -->
             </div>
             <div class="col-12 col-md-6">
-                <!-- Right half of the screen (contact form) -->
                 <form id="contactForm" class="transparent-white">
                     <h2>Contact Us</h2>
-                    <div class="form-group">
+                    <div class="form-entry">
                         <label for="category">Category</label>
                         <select class="form-control" id="category" onchange="updateFormFields()">
                             <option value="" disabled selected>Select a category</option>
                             <option value="customer_service">Customer Service</option>
                             <option value="general">General</option>
                             <option value="suggestions">Suggestions</option>
-                            <option value="large_sales">Large Sales</option>
+                            <option value="phone_number">Phone Number</option>
                         </select>
                     </div>
-                    <div class="form-group" id="nameGroup">
+                    <div class="form-entry" id="nameGroup">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Your Name">
                     </div>
-                    <div class="form-group" id="emailGroup">
+                    <div class="form-entry" id="emailGroup">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Your Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" onblur="validateEmail()" required>
                     </div>
-                    <div class="form-group" id="messageGroup">
+                    <div class="form-entry" id="messageGroup">
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
                     </div>
-                    <div class="form-group" id="quantityGroup" style="display:none;">
+                    <div class="form-entry" id="quantityGroup" style="display:none;">
                         <label for="quantity">Quantity</label>
                         <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
                 <br>
-                <div class="form-group" id="messageGroup">
+                <div class="form-entry" id="messageGroup">
                     <label for="message">Address</label>
                 </div>
                 <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d336.0904836984035!2d-6.243198865391485!3d53.34903898579224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1680641923802!5m2!1sen!2sie" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
         </div>
-    </div>
+        <div class="footer">
+            <footer>
+                <div class="footer-container">
+                    <h3 class="footer-title">Grounded Coffee</h3>
+                    <p class="footer-text">The finest coffee in town, grounded for your satisfaction.</p>
+                    <div class="footer-socials">
+                        <a href="fb.png" class="social-icon"><img src="fb.png" alt="Facebook"></a>
+                        <a href="twtr.png" class="social-icon"><img src="twtr.png" alt="Twitter"></a>
+                        <a href="ig.png" class="social-icon"><img src="ig.png" alt="Instagram"></a>
+                    </div>
+                    <p class="footer-copyright">© 2023 Grounded Coffee. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
     <script>
         function updateFormFields() {
             const category = document.getElementById("category").value;
             const quantityGroup = document.getElementById("quantityGroup");
 
-            if (category === "large_sales") {
+            if (category === "phone_number") {
                 quantityGroup.style.display = "block";
             } else {
                 quantityGroup.style.display = "none";

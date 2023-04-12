@@ -5,6 +5,11 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+.nav-link.active {
+  color:#a0866a !important;
+  text-shadow: 1px 1px 1px antiquewhite;
+}
+
 .containers {
   height: 100%;
 }
@@ -15,10 +20,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: color;
   height: 100vh;
 }
 
-/* Adding image to each div */
 .image1 {
   background-image: url("pexels-nao-triponez-129207-home1.jpg");
 }
@@ -37,6 +42,9 @@ body {
 .image5 {
   background-image: url("pexels-farmers.jpg");
 }
+.image7 {
+  background-image: url("pexels-cottonbro-studio-3826433.jpg");
+}
 
 .text {
   font-size: 30px;
@@ -49,6 +57,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -58,7 +67,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.form-group {
+.form-entry {
   color: rgb(116, 64, 0);
   text-shadow: 1px 1px 2px antiquewhite;
 }
@@ -79,11 +88,10 @@ h2 {
   min-height: calc(100vh - 170px);
 }
 
-/* Footer Styles */
 footer {
-  background-color: #4b3827;
-  color: #ffffff;
-  padding: 40px 0;
+  background-color: #311c10;
+  color: antiquewhite;
+  padding: 36px 0;
 }
 
 .footer-container {
@@ -156,19 +164,21 @@ footer {
   .we-are {
     margin-bottom: -70px;
   font-size: 5rem; 
-  font-family: Roboto;
+  font-family: 'Times New Roman';
   }
   
-  .Hero {
+  /*.Hero {
   position: absolute;
-  top: 50%;
-  left: calc(50% - 600px);
+  /*top: 50%;
   width: 30%;
-  transform: translateY(-50%);
-  font-size: xx-large;
   color: white;
-  }
-  
+  }*/
+
+  .Hero {
+    max-width: 30%;
+    color: #ffffff;
+}
+
   .italic {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
@@ -180,27 +190,9 @@ footer {
   font-size: 2rem;
   }
   
-  @media (max-width: 767px) {
-  .bg {
-  background-attachment: scroll;
-  }
   
-  .Hero {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  width: 90%;
-  transform: translateY(-50%);
-  font-size: 72;
-  color: white;
-  }
   
-  .grounded-text {
-  font-size: 5rem; 
-  }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) { 
+  @media (max-width: 768px)  { 
   .Hero {
   position: absolute;
   top: 50%;
@@ -247,10 +239,10 @@ footer {
     background-image: url("pexels-farmers.jpg");
   }
   
-  .text {
+  /*.text {
     font-size: 30px;
     width: 100%;
     text-align: center;
-  }
+  }*/
 }
   

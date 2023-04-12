@@ -14,47 +14,88 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Grounded</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="Coffee Shop Badge Logo.png" alt="Logo" class="logo-placeholder me-2">
+              Grounded
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto"></div>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setActiveMenuItem();
+      
+          function setActiveMenuItem() {
+            const currentUrl = window.location.href;
+            const navLinks = document.querySelectorAll(".nav-link");
+      
+            navLinks.forEach((navLink) => {
+              if (navLink.href === currentUrl) {
+                navLink.classList.add("active");
+              } else {
+                navLink.classList.remove("active");
+              }
+            });
+          }
+        });
+      </script>
     <div class="containers">
         <div class="bg image1">
-            <div class="col align-self-start">
-                <div class="Hero">
-                  <div class="we-are">We are</div> 
-                  <span class="grounded-text">GROUNDED</span>
-                    <br>
-                    <span class="phonetic">/ˈgraʊndəd/</span> <span class="italic">adjective</span>
-                    <div class="times">used to describe a person who is sensible and has a good understanding of what is really important in life</div>
+          <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <div class="text-container p-5">
+                        <div class="Hero">
+                            <div class="we-are">We are</div> 
+                            <span class="grounded-text">GROUNDED</span>
+                            <br>
+                            <span class="phonetic">/ˈgraʊndəd/</span> <span class="italic">adjective:</span>
+                            <div class="times">used to describe a person who is sensible and has a good understanding of what is really important in life.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+                
+      </div>
 
         <div class="bg image2">
-            <div class="Hero">What's up?</div>
+          <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <div class="text-container p-5">
+                        <div class="Hero">
+                            <div class="we-are"></div> 
+                            <span class="grounded-text">What's up</span>
+                            <br>
+                            <span class="phonetic">/ˈgraʊndəd/</span> <span class="italic">adjective:</span>
+                            <div class="times">used to describe a person who is sensible and has a good understanding of what is really important in life.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
         <div class="bg image3">
@@ -84,7 +125,7 @@
         var nav = document.querySelector('nav');
         
         window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 800) {
+            if (window.pageYOffset > 170) {
                 nav.classList.add('bg-dark', 'shadow');
             } else {
                 nav.classList.remove('bg-dark', 'shadow');
