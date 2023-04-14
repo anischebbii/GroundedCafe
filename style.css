@@ -191,6 +191,86 @@ footer {
   }
   
   
+  .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+   .menu-column {
+    padding: 40px;
+    position: relative;
+    margin-top:50px;
+    min-height:50px;
+    justify-content:space-between;
+   }
+   .menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content:space-between;
+    position: sticky; top: 0;
+    padding: 50px;
+    flex-grow: 1;
+   }
+   .menu-div {
+    padding: 40px;
+    position: relative;
+    margin-top:50px;
+    min-height:50px;
+    justify-content:space-between;
+   }
+
+   .menu-header {
+    color: #ffffff;
+    font-size: 150px;
+    margin-top: 90px;
+    font-family: Papyrus;
+    font-style: underline;
+    font-weight: 500;
+    text-align: center;
+    }
+  .menu-title {
+    color: #ffffff;
+    font-size: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Papyrus;
+    }
+  .menu-text {
+    color: #ffffff;
+    font-family: Courier New;
+    font-size: 26px;
+    margin-bottom: -70px   
+    }
+  .menu-title-coffee {
+    color: #ffffff;
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Papyrus;
+    }
+  .menu-text-coffee {
+    color: #ffffff;
+    font-family: Lucida Handwriting;
+    font-size: 20px;
+    margin-bottom: -70px   
+  } 
+
+  .menu-img {
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    margin: 0 5px;
+    line-height: 30px;
+    border-radius: 50%;
+  }
+
+
+
   
   @media (max-width: 768px)  { 
   .Hero {
@@ -240,45 +320,7 @@ footer {
   }
   
 
-  .menu-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu-div {
-    padding: 40px;
-    position: relative;
-    margin-top:50px;
-    min-height:50px;
-    justify-content:space-between;
-   }
-   .menu-header {
-    color: #ffffff;
-    font-size: 28px;
-    margin-top: 15px;
-    text-align: center;
-    }
-  .menu-title {
-    color: #ffffff;
-    font-size: 216px;
-    margin-bottom: 15px;
-    text-align: center;
-    }
-  .menu-text {
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    margin-bottom: -70px
-    width: 100%;
-    text-align: center;
-  } 
-  .menu-paragraph {
-    font-size: 10x;
-    text-align: center;
-    margin-bottom: 20px;
-   }
+
   /*.text {
     font-size: 30px;
     width: 100%;
