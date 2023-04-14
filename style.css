@@ -238,6 +238,12 @@ footer {
   .image5 {
     background-image: url("pexels-farmers.jpg");
   }
+
+  .row{
+    margin-top:50px;
+    min-height:50px;
+    justify-content:space-between;
+  }/*barry*/
   
   /*.text {
     font-size: 30px;
