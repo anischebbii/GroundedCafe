@@ -13,10 +13,10 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-      <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-6">
+      <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-              <img src="Coffee Shop Badge Logo.png" alt="Logo" class="logo-placeholder me-2">
+              <img src="Coffee Shop Badge Logo.png" class="object-fit-contain border rounded" alt="Logo" class="me-4">
               Grounded
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,43 +42,31 @@
             </div>
         </div>
     </nav>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          setActiveMenuItem();
-      
-          function setActiveMenuItem() {
-            const currentUrl = window.location.href;
-            const navLinks = document.querySelectorAll(".nav-link");
-      
-            navLinks.forEach((navLink) => {
-              if (navLink.href === currentUrl) {
-                navLink.classList.add("active");
-              } else {
-                navLink.classList.remove("active");
-              }
-            });
-          }
-        });
-      </script>
-    <div class="containers">
+    
+    <section>
         <div class="bg image1">
-          <div class="container-fluid">
-            <div class="row vh-100">
-                <div class="col-12 d-flex align-items-center justify-content-start">
-                    <div class="text-container p-5">
-                        <div class="Hero">
-                            <div class="we-are">We are</div> 
-                            <span class="grounded-text">GROUNDED</span>
-                            <br>
-                            <span class="phonetic">/ˈgraʊndəd/</span> <span class="italic">adjective:</span>
-                            <div class="times">used to describe a person who is sensible and has a good understanding of what is really important in life.</div>
-                        </div>
+          <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-md-6 col-lg-4 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-Items-center justify-content-md-start align-items-md-center justify-content-xl-center">
+                    <div class="Hero">
+                        <div class="we-are">We are</div> 
+                            <div class="grounded-text">GROUNDED</div>
+                            <div class="phonetic">/ˈgraʊndəd/</div> <div class="italic">adjective:</div>
+                        <div class="times">used to describe a person who is sensible and has a good understanding of what is really important in life.</div>
                     </div>
+                            
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-3 align-items-center">
+                    <Div>
+                        <a class="btn btn-primary" href="#" role="button">About Us</a>
+
+                    </Div>
                 </div>
             </div>
         </div>
-                
-      </div>
+    </div>                
+    </section>
 
         <div class="bg image2">
           <div class="container-fluid">
@@ -103,7 +91,7 @@
               <div class="Hero"></div>
             </div>
         </div>
-        
+    </section>    
         <div class="bg image4"></div>
         <div class="footer">
             <footer>
@@ -121,17 +109,11 @@
         </div>
     </div>
     
-    <script type="text/javascript">
-        var nav = document.querySelector('nav');
-        
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 170) {
-                nav.classList.add('bg-dark', 'shadow');
-            } else {
-                nav.classList.remove('bg-dark', 'shadow');
-            }
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
      
