@@ -190,7 +190,9 @@ footer {
   font-size: 2rem;
   }
   
-  
+  .col-4{
+    padding: 2rem;
+  }
   .menu-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -248,15 +250,11 @@ footer {
     }
   .menu-title-coffee {
     color: #ffffff;
-    font-size: 55px;
     margin-bottom: 15px;
     text-align: center;
-    font-family: Papyrus;
     }
   .menu-text-coffee {
     color: #ffffff;
-    font-family: Lucida Handwriting;
-    font-size: 20px;
     margin-bottom: -70px   
   } 
 
