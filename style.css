@@ -5,7 +5,7 @@ body {
   font-family: "roboto", sans-serif;
 }
 .btn {
-  background-color: #9d7d5a;
+  background-color: #DA9F5B;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -191,6 +191,12 @@ footer {
   font-size: 6rem; 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-top: -2rem;
+  }
+  .grounded-text-dark {
+    top: 0%;
+    font-size: 6rem; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -2rem;
 
   }
   .we-are {
@@ -199,6 +205,12 @@ footer {
   margin-bottom: -3rem;
 
   }
+  .we-are-dark {
+    font-size: 4rem; 
+    font-family: 'Times New Roman';
+    margin-bottom: -3rem;
+  
+    }
   
   /*.Hero {
   position: absolute;
@@ -219,12 +231,21 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
   }
+  .italic-dark{
+    font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: #33211D
+  }
   
   .times, .phonetic {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
   }
-  
+  .times-dark, .phonetic-dark {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    }
   .menu-text {
     color: #ffffff;
     }
