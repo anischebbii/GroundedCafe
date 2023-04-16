@@ -4,6 +4,16 @@ body {
   margin: 0;
   font-family: "roboto", sans-serif;
 }
+.btn {
+  background-color: #9d7d5a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 h5 {
   display: block;
   font-size: 0.83em;
@@ -15,8 +25,18 @@ h5 {
 }
 
 .nav-link.active {
-  color:#a0866a !important;
-  text-shadow: 1px 1px 1px antiquewhite;
+  color:#ffffff !important;
+  
+  font-size: larger;
+  text-decoration:wavy;
+}
+.nav-link{
+  color: antiquewhite;
+  font-size: larger;
+}
+.nav-link:hover{
+  color:white !important;
+  text-shadow: 1px 1px 1px white;
 }
 
 .containers {
@@ -190,6 +210,9 @@ footer {
   .Hero {
     color: #ffffff;
 }
+  .hero-dark{
+    color:#33211D;
+  }
 
   .italic {
   font-style: italic;
