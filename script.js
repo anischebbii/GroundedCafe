@@ -24,7 +24,11 @@ var nav = document.querySelector('nav');
                 nav.classList.remove('bg-dark', 'shadow');
             }
         });
-
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        navbarToggler.addEventListener("click", function () {
+          nav.classList.toggle("bg-dark");
+          nav.classList.toggle("shadow");
+        });
 
 
 function updateFormFields() {
@@ -49,3 +53,4 @@ function validateEmail() {
         emailInput.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
     }
 }
+
