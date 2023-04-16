@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "roboto", sans-serif;
 }
+
 .btn {
   background-color: #DA9F5B;
   border: none;
@@ -15,6 +16,7 @@ body {
   font-size: 16px;
   border-radius: 10px;
 }
+
 .btn-brown {
   background-color: #33211D;
   border: none;
@@ -26,6 +28,7 @@ body {
   font-size: 16px;
   border-radius: 10px;
 }
+
 h5 {
   display: block;
   font-size: 0.83em;
@@ -37,17 +40,19 @@ h5 {
 }
 
 .nav-link.active {
-  color:#ffffff !important;
-  
+  color: #ffffff !important;
+
   font-size: larger;
-  text-decoration:wavy;
+  text-decoration: wavy;
 }
-.nav-link{
+
+.nav-link {
   color: antiquewhite;
   font-size: larger;
 }
-.nav-link:hover{
-  color:white !important;
+
+.nav-link:hover {
+  color: white !important;
   text-shadow: 1px 1px 1px white;
 }
 
@@ -80,12 +85,15 @@ h5 {
 .image4 {
   background-image: url("pexels-nao-triponez-129207-home.jpg");
 }
+
 .image5 {
   background-image: url("pexels-farmers.jpg");
 }
+
 .image7 {
   background-image: url("images/coffeeimages/blackboard.jpg");
 }
+
 .image8 {
   background-image: url("pexels-nikolay-osmachko-230477.jpg");
 }
@@ -125,7 +133,7 @@ h2 {
   .bg {
     background-attachment: fixed;
   }
-  
+
 }
 
 .content {
@@ -150,21 +158,21 @@ footer {
 .footer-title {
   font-size: 28px;
   margin-bottom: 15px;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
-  }
-  
-  .footer-socials {
+}
+
+.footer-socials {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -173,151 +181,165 @@ footer {
   line-height: 30px;
   color: #4b3827;
   border-radius: 50%;
-  }
-  
-  img {
+}
+
+img {
   display: inline-block;
   width: 30px;
   height: 30px;
   margin: 0 5px;
   line-height: 30px;
   border-radius: 50%;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
   padding: -5px;
   background-color: #9d7d5a;
-  }
-  
-  .footer-copyright {
+}
+
+.footer-copyright {
   font-size: 14px;
   text-align: center;
-  }
-  
-  iframe {
+}
+
+iframe {
   opacity: 0.6;
-  }
-  
-  iframe:hover {
+}
+
+iframe:hover {
   opacity: 1;
-  }
-  
-  .grounded-text {
+}
+
+.grounded-text {
   top: 0%;
-  font-size: 6rem; 
+  font-size: 6rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-top: -2rem;
-  }
-  .grounded-text-dark {
-    top: 0%;
-    font-size: 6rem; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: -2rem;
+}
 
-  }
-  .we-are {
-  font-size: 4rem; 
+.grounded-text-dark {
+  top: 0%;
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: -2rem;
+
+}
+
+.we-are {
+  font-size: 4rem;
   font-family: 'Times New Roman';
   margin-bottom: -3rem;
 
-  }
-  .we-are-dark {
-    font-size: 4rem; 
-    font-family: 'Times New Roman';
-    margin-bottom: -3rem;
-  
-    }
-  
-  /*.Hero {
+}
+
+.we-are-dark {
+  font-size: 4rem;
+  font-family: 'Times New Roman';
+  margin-bottom: -3rem;
+
+}
+
+/*.Hero {
   position: absolute;
   /*top: 50%;
   width: 30%;
   color: white;
   }*/
 
-  .Hero {
-    color: antiquewhite;
+.Hero {
+  color: antiquewhite;
 }
-  .hero-dark{
-    color:#33211D;
-  }
 
-  .italic {
+.hero-dark {
+  color: #33211D;
+}
+
+.italic {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
-  }
-  .italic-dark{
-    font-style: italic;
+}
+
+.italic-dark {
+  font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
   color: #33211D
-  }
-  
-  .times, .phonetic {
+}
+
+.times,
+.phonetic {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
-  }
-  .times-dark, .phonetic-dark {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    }
-  .menu-text {
-    color: #ffffff;
-    }
-  .menu-title-coffee {
-    color: #ffffff;
-    font-size: 2rem;
-    }
-  .menu-text-coffee {
-    color: #ffffff;
-    margin-bottom: -70px   
-  } 
-  .menu-price {
-    position:relative;
-    margin: 10px;
-    bottom: 30px;
-    left: 5px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 45px;
-    color: #33211D;
-    background: #DA9F5B;
-  }
-  .menu-img {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    margin: 0 5px;
-    border-radius: 50%;
-  }
+}
+
+.times-dark,
+.phonetic-dark {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.menu-text {
+  color: #ffffff;
+}
+
+.menu-title-coffee {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.menu-text-coffee {
+  color: #ffffff;
+  margin-bottom: -70px
+}
+
+.menu-price {
+  position: relative;
+  margin: 10px;
+  bottom: 30px;
+  left: 5px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211D;
+  background: #DA9F5B;
+}
+
+.menu-img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
 
 .about-header{
   font-size: 26px;
   }
 
-  
-  @media (max-width: 768px)  { 
+
+@media (max-width: 768px) {
   .Hero {
-  position: absolute;
-  top: 50%;
-  left: 5%;  
-  width: 90%; 
-  transform: translateY(-50%);
-  font-size: x-large; 
-  color: white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    transform: translateY(-50%);
+    font-size: x-large;
+    color: white;
   }
-  
+
   .grounded-text {
-  font-size:  5rem; 
+    font-size: 5rem;
   }
+
   .containers {
     height: 100%;
   }
-  
+
   .bg {
     position: relative;
     background-attachment: fixed;
@@ -326,27 +348,28 @@ footer {
     background-size: cover;
     height: 100vh;
   }
-  
+
   /* Adding image to each div */
   .image1 {
     background-image: url("pexels-nao-triponez-129207-home1.jpg");
   }
-  
+
   .image2 {
     background-image: url("pexels-nao-triponez-129207.jpg");
   }
-  
+
   .image3 {
     background-image: url("pexels-nao-triponez-new.jpg");
   }
-  
+
   .image4 {
     background-image: url("pexels-nao-triponez-129207-home.jpg");
   }
+
   .image5 {
     background-image: url("pexels-farmers.jpg");
   }
-  
+
 
 
   /*.text {
@@ -355,4 +378,3 @@ footer {
     text-align: center;
   }*/
 }
-  
