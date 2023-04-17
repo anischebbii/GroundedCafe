@@ -51,6 +51,17 @@ h5 {
   font-size: larger;
 }
 
+.custom-navbar {
+  background-color: (rgba(0, 0, 0, 0.5));
+  min-height: 80px;
+  padding: 0.5rem 1rem;
+}
+
+.custom-logo {
+  width: 50px;
+  height: 50px;
+}
+
 .nav-link:hover {
   color: white !important;
   text-shadow: 1px 1px 1px white;
@@ -71,19 +82,19 @@ h5 {
 }
 
 .image1 {
-  background-image: url("pexels-nao-triponez-129207-home1.jpg");
+  background-image: url("pexels-monstera-7114087 first.jpg");
 }
 
 .image2 {
-  background-image: url("pexels-nao-triponez-129207.jpg");
-}
-
-.image3 {
   background-image: url("pexels-nao-triponez-new.jpg");
 }
 
+.image3 {
+  background-image: url("pexels-nao-triponez-129207.jpg");
+}
+
 .image4 {
-  background-image: url("pexels-nao-triponez-129207-home.jpg");
+  background-image: url("pexels-monstera-7114087 last.jpg");
 }
 
 .image5 {
@@ -145,6 +156,7 @@ footer {
   background-color: #311c10;
   color: antiquewhite;
   padding: 36px 0;
+
 }
 
 .footer-container {
@@ -153,6 +165,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: smaller;
 }
 
 .footer-title {
@@ -161,7 +174,7 @@ footer {
 }
 
 .footer-text {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -329,7 +342,6 @@ iframe:hover {
     width: 90%;
     transform: translateY(-50%);
     font-size: x-large;
-    color: white;
   }
 
   .grounded-text {
@@ -340,36 +352,17 @@ iframe:hover {
     height: 100%;
   }
 
+  .image1m {
+    background-image: url("pexels-monstera-7114087 firstmob.jpg");
+  }
+
   .bg {
-    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
   }
-
-  /* Adding image to each div */
-  .image1 {
-    background-image: url("pexels-nao-triponez-129207-home1.jpg");
-  }
-
-  .image2 {
-    background-image: url("pexels-nao-triponez-129207.jpg");
-  }
-
-  .image3 {
-    background-image: url("pexels-nao-triponez-new.jpg");
-  }
-
-  .image4 {
-    background-image: url("pexels-nao-triponez-129207-home.jpg");
-  }
-
-  .image5 {
-    background-image: url("pexels-farmers.jpg");
-  }
-
 
 
   /*.text {

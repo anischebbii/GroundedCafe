@@ -44,7 +44,7 @@ function updateFormFields() {
 
 function validateEmail() {
     const emailInput = document.getElementById("email");
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; /*https://www.w3schools.blog/validate-email-regular-expression-regex-java*/
     const isValidEmail = emailPattern.test(emailInput.value);
 
     if (isValidEmail) {
