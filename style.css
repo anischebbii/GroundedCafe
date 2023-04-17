@@ -109,6 +109,14 @@ h5 {
   background-image: url("pexels-nikolay-osmachko-230477.jpg");
 }
 
+.image9 {
+  background-image: url("pexels-lucie-liz-3256807.jpg");
+}
+
+.image10 {
+  background-image: url("pexels-hasan-zahra-2118560.jpeg");
+}
+
 .text {
   font-size: 30px;
   width: 100%;
@@ -261,11 +269,15 @@ iframe:hover {
   }*/
 
 .Hero {
-  color: antiquewhite;
+  color: white;
 }
 
 .hero-dark {
   color: #33211D;
+}
+
+.Hero-brown {
+  color: #4b3827;
 }
 
 .italic {
