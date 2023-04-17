@@ -169,12 +169,13 @@ footer {
 }
 
 .footer-title {
-  font-size: 28px;
+  font-size: 12px;
   margin-bottom: 15px;
+  text-decoration: double;
 }
 
 .footer-text {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
