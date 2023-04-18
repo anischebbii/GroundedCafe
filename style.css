@@ -374,15 +374,16 @@ iframe:hover {
     height: 100%;
   }
 
+  /*this part is meant to make the first background darker so it doesn't overlap with the bright overlay text*/
   .image1m {
     background-image: url("images/pexels-monstera-7114087 firstmob.jpg");
   }
 
   .bg {
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;;*/
     height: 100vh;
   }
 

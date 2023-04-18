@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
+// this part darkens the nav bar when the window is scro
 var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function () {
@@ -70,5 +70,13 @@ function handleSubmit(e) {
         successMessage.classList.add("alert", "alert-success");
         contactForm.parentNode.insertBefore(successMessage, contactForm);
         contactForm.style.display = "none";
+    }
+}
+
+if (/iPhone|Android|iPod/i.test(navigator.userAgent)) {
+    // Remove background-attachment: fixed; for old iOS devices
+    var bgElements = document.querySelectorAll('.bg');
+    for (var i = 0; i < bgElements.length; i++) {
+        bgElements[i].style.backgroundAttachment = 'initial';
     }
 }
