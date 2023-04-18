@@ -16,21 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-// this part darkens the nav bar when the window is scro
-var nav = document.querySelector('nav');
-
-window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 170) {
-        nav.classList.add('bg-dark', 'shadow');
-    } else {
-        nav.classList.remove('bg-dark', 'shadow');
-    }
-});
-const navbarToggler = document.querySelector(".navbar-toggler");
-navbarToggler.addEventListener("click", function () {
-    nav.classList.toggle("bg-dark");
-    nav.classList.toggle("shadow");
-});
 
 function updateFormFields() {
     const category = document.getElementById("category").value;
@@ -43,9 +28,29 @@ function updateFormFields() {
     }
 }
 
+// this part darkens the nav bar when the window is scrolled up to prevent the parallax text from overlapping with the text of the "transparent" navbar
+var nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 170) {
+        nav.classList.add('bg-dark', 'shadow');
+    } else {
+        nav.classList.remove('bg-dark', 'shadow');
+    }
+});
+//and the toggler for mobile menu expand feature
+const navbarToggler = document.querySelector(".navbar-toggler");
+navbarToggler.addEventListener("click", function () {
+    nav.classList.toggle("bg-dark");
+    nav.classList.toggle("shadow");
+});
+
+
+
 function validateEmail() {
     const emailInput = document.getElementById("email");
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; /*https://www.w3schools.blog/validate-email-regular-expression-regex-java*/
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    /*https://www.w3schools.blog/validate-email-regular-expression-regex-java*/
     const isValidEmail = emailPattern.test(emailInput.value);
 
     if (isValidEmail) {
@@ -64,8 +69,8 @@ function handleSubmit(e) {
         const contactForm = document.getElementById("contactForm");
         const successMessage = document.createElement("div");
         successMessage.innerHTML = `
-            <h2>Thank you for your submission!</h2>
-            <p>We have received your message and will get back to you shortly.</p>
+            <h2>Thank you for reaching out!</h2>
+            <p>We have received your message successfully.</p>
         `;
         successMessage.classList.add("alert", "alert-success");
         contactForm.parentNode.insertBefore(successMessage, contactForm);
@@ -73,7 +78,7 @@ function handleSubmit(e) {
     }
 }
 
-if (/iPhone|Android|iPod/i.test(navigator.userAgent)) {
+if (/iPhone|iPod/i.test(navigator.userAgent)) {
     // Remove background-attachment: fixed; for old iOS devices
     var bgElements = document.querySelectorAll('.bg');
     for (var i = 0; i < bgElements.length; i++) {
