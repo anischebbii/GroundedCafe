@@ -16,8 +16,8 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-6 custom-navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="Coffee Shop Badge Logo.png" class="object-fit-contain rounded-circle custom-logo" alt="Logo"
-                    class="me-4"> Grounded
+                <img src="images/Coffee Shop Badge Logo.png" class="object-fit-contain rounded-circle custom-logo"
+                    alt="Logo" class="me-4"> Grounded
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
                     <h2>Contact Us</h2>
                     <div class="form-entry">
                         <label for="category">Category</label>
-                        <select class="form-control" id="category" onchange="updateFormFields()">
+                        <select class="form-control" id="category" onchange="updateFormFields()" required>
                             <option value="" disabled selected>Select a category</option>
                             <option value="customer_service">Customer Service</option>
                             <option value="general">General</option>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="form-entry" id="nameGroup">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-entry" id="emailGroup">
                         <label for="email">Email</label>
@@ -90,7 +90,8 @@
                     </div>
                     <div class="form-entry" id="messageGroup">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"
+                            required></textarea>
                     </div>
                     <div class="form-entry" id="quantityGroup" style="display:none;">
                         <label for="phone_number">Phone Number</label>
@@ -125,9 +126,12 @@
                                 <h3 class="footer-title">Grounded Coffee</h3>
                                 <p class="footer-text">The finest coffee in town, grounded for your satisfaction.</p>
                                 <div class="footer-socials">
-                                    <a href="fb.png" class="social-icon"><img src="fb.png" alt="Facebook"></a>
-                                    <a href="twtr.png" class="social-icon"><img src="twtr.png" alt="Twitter"></a>
-                                    <a href="ig.png" class="social-icon"><img src="ig.png" alt="Instagram"></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100091797467294"
+                                        class="social-icon"><img src="images/fb.png" alt="Facebook"></a>
+                                    <a href="https://twitter.com/Grounded2023" class="social-icon"><img
+                                            src="images/twtr.png" alt="Twitter"></a>
+                                    <a href="https://www.instagram.com/groundedcafe2023/" class="social-icon"><img
+                                            src="images/ig.png" alt="Instagram"></a>
                                 </div>
                                 <p class="footer-copyright">© 2023 Grounded Café. All Rights Reserved.</p>
                             </div>

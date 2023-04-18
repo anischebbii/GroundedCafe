@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     setActiveMenuItem();
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", handleSubmit);
 
     function setActiveMenuItem() {
         const currentUrl = window.location.href;
@@ -30,7 +32,6 @@ navbarToggler.addEventListener("click", function () {
     nav.classList.toggle("shadow");
 });
 
-
 function updateFormFields() {
     const category = document.getElementById("category").value;
     const quantityGroup = document.getElementById("quantityGroup");
@@ -54,3 +55,20 @@ function validateEmail() {
     }
 }
 
+function handleSubmit(e) {
+    e.preventDefault();
+
+    const isValidForm = true;
+
+    if (isValidForm) {
+        const contactForm = document.getElementById("contactForm");
+        const successMessage = document.createElement("div");
+        successMessage.innerHTML = `
+            <h2>Thank you for your submission!</h2>
+            <p>We have received your message and will get back to you shortly.</p>
+        `;
+        successMessage.classList.add("alert", "alert-success");
+        contactForm.parentNode.insertBefore(successMessage, contactForm);
+        contactForm.style.display = "none";
+    }
+}

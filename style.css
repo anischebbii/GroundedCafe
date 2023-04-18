@@ -82,23 +82,23 @@ h5 {
 }
 
 .image1 {
-  background-image: url("pexels-monstera-7114087 first.jpg");
+  background-image: url("images/pexels-monstera-7114087 first.jpg");
 }
 
 .image2 {
-  background-image: url("pexels-nao-triponez-new.jpg");
+  background-image: url("images/pexels-nao-triponez-new.jpg");
 }
 
 .image3 {
-  background-image: url("pexels-nao-triponez-129207.jpg");
+  background-image: url("images/pexels-nao-triponez-129207.jpg");
 }
 
 .image4 {
-  background-image: url("pexels-monstera-7114087 last.jpg");
+  background-image: url("images/pexels-monstera-7114087 last.jpg");
 }
 
 .image5 {
-  background-image: url("pexels-farmers.jpg");
+  background-image: url("images/pexels-farmers.jpg");
 }
 
 .image7 {
@@ -106,15 +106,15 @@ h5 {
 }
 
 .image8 {
-  background-image: url("pexels-nikolay-osmachko-230477.jpg");
+  background-image: url("images/pexels-nikolay-osmachko-230477.jpg");
 }
 
 .image9 {
-  background-image: url("pexels-lucie-liz-3256807.jpg");
+  background-image: url("images/pexels-lucie-liz-3256807.jpg");
 }
 
 .image10 {
-  background-image: url("pexels-hasan-zahra-2118560.jpeg");
+  background-image: url("images/pexels-hasan-zahra-2118560.jpeg");
 }
 
 .text {
@@ -124,7 +124,7 @@ h5 {
 }
 
 .contact-background {
-  background-image: url("pexels-monstera-7114087.jpg");
+  background-image: url("images/pexels-monstera-7114087.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,6 +346,9 @@ iframe:hover {
   font-size: 26px;
 }
 
+.brownbg {
+  background-color: #DA9F5B;
+}
 
 @media (max-width: 768px) {
   .Hero {
