@@ -387,6 +387,13 @@ iframe:hover {
     height: 100vh;
   }
 
+  .menu-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
 
   /*.text {
     font-size: 30px;
